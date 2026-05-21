@@ -1,0 +1,53 @@
+---
+import type { Role } from "../data/site";
+
+interface Props {
+  role: Role;
+}
+
+const { role } = Astro.props;
+const Tag = role.link ? "a" : "div";
+---
+
+<Tag
+  href={role.link}
+  target={role.link ? "_blank" : undefined}
+  rel={role.link ? "noopener noreferrer" : undefined}
+  class={`group relative block rounded-2xl border border-ink-200/70 dark:border-ink-800 bg-white dark:bg-ink-900/60 p-6 transition-all hover:border-ink-300 dark:hover:border-ink-700 hover:shadow-sm`}
+>
+  <header>
+    <h3 class="font-semibold tracking-tight text-lg">
+      {role.company}
+    </h3>
+    {
+      role.org && (
+        <p class="mt-0.5 text-sm text-ink-500 dark:text-ink-400">{role.org}</p>
+      )
+    }
+    <p class="mt-2 text-sm font-medium text-ink-700 dark:text-ink-200">
+      {role.title}
+    </p>
+    <p
+      class="mt-1 font-mono text-xs text-ink-500 dark:text-ink-400 tabular-nums"
+    >
+      {role.start} — {role.end}
+    </p>
+  </header>
+
+  <p class="mt-4 text-sm leading-relaxed text-ink-700 dark:text-ink-300">
+    {role.summary}
+  </p>
+
+  {
+    role.highlights && role.highlights.length > 0 && (
+      <ul class="mt-4 space-y-1.5">
+        {role.highlights.map((h) => (
+          <li class="flex gap-2 text-sm text-ink-600 dark:text-ink-300">
+            <span class="mt-2 h-1 w-1 shrink-0 rounded-full bg-accent" />
+            <span>{h}</span>
+          </li>
+        ))}
+      </ul>
+    )
+  }
+</Tag>

@@ -1,0 +1,19 @@
+---
+import { roles } from "../data/site";
+import WorkCard from "./WorkCard.astro";
+---
+
+<section id="work" class="scroll-mt-20">
+  <div class="mx-auto max-w-3xl px-6 py-16 sm:py-24">
+    <header class="flex items-baseline justify-between">
+      <h2 class="text-2xl sm:text-3xl font-semibold tracking-tight">Work</h2>
+      <span class="font-mono text-xs text-ink-500 dark:text-ink-400">
+        {roles.length} roles
+      </span>
+    </header>
+
+    <div class="mt-8 grid gap-4 sm:grid-cols-2">
+      {roles.map((role) => <WorkCard role={role} />)}
+    </div>
+  </div>
+</section>

@@ -1,0 +1,44 @@
+---
+import { site } from "../data/site";
+---
+
+<section
+  id="contact"
+  class="scroll-mt-20 border-t border-ink-100 dark:border-ink-900"
+>
+  <div class="mx-auto max-w-3xl px-6 py-16 sm:py-24">
+    <h2 class="text-2xl sm:text-3xl font-semibold tracking-tight">
+      Let's talk.
+    </h2>
+    <p class="mt-3 max-w-lg text-ink-600 dark:text-ink-300">
+      Always interested in good conversations about product, AI, or building.
+      The fastest way to reach me is email or LinkedIn.
+    </p>
+
+    <div class="mt-8 flex flex-wrap items-center gap-3">
+      <a
+        href={`mailto:${site.email}`}
+        class="inline-flex items-center gap-2 rounded-full bg-ink-900 dark:bg-white text-white dark:text-ink-900 px-5 py-2.5 text-sm font-medium hover:opacity-90 transition-opacity"
+      >
+        {site.email}
+      </a>
+      <a
+        href={site.socials.linkedin}
+        target="_blank"
+        rel="noopener noreferrer"
+        class="inline-flex items-center gap-2 rounded-full border border-ink-200 dark:border-ink-800 px-5 py-2.5 text-sm font-medium hover:bg-ink-100 dark:hover:bg-ink-800 transition-colors"
+      >
+        LinkedIn
+      </a>
+    </div>
+  </div>
+
+  <div class="border-t border-ink-100 dark:border-ink-900">
+    <div
+      class="mx-auto max-w-3xl px-6 py-6 flex items-center justify-between text-xs text-ink-500 dark:text-ink-400 font-mono"
+    >
+      <span>© {new Date().getFullYear()} {site.name}</span>
+      <span>anuragpatnaik.com</span>
+    </div>
+  </div>
+</section>

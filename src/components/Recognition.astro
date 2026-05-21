@@ -1,0 +1,45 @@
+---
+import { recognitions } from "../data/site";
+---
+
+<section
+  id="recognition"
+  class="scroll-mt-20 border-t border-ink-100 dark:border-ink-900"
+>
+  <div class="mx-auto max-w-3xl px-6 py-16 sm:py-24">
+    <header class="flex items-baseline justify-between">
+      <h2 class="text-2xl sm:text-3xl font-semibold tracking-tight">
+        Recognition
+      </h2>
+      <span class="font-mono text-xs text-ink-500 dark:text-ink-400">
+        Awards · judging · grants
+      </span>
+    </header>
+
+    <ul class="mt-8 divide-y divide-ink-100 dark:divide-ink-900">
+      {
+        recognitions.map((r) => (
+          <li class="py-5 flex items-baseline justify-between gap-6">
+            <div class="min-w-0">
+              <p class="font-medium tracking-tight">
+                {r.title}
+                <span class="text-ink-500 dark:text-ink-400 font-normal">
+                  {" "}
+                  · {r.org}
+                </span>
+              </p>
+              {r.detail && (
+                <p class="mt-1 text-sm leading-relaxed text-ink-600 dark:text-ink-400">
+                  {r.detail}
+                </p>
+              )}
+            </div>
+            <span class="shrink-0 font-mono text-xs text-ink-500 dark:text-ink-400 tabular-nums">
+              {r.year}
+            </span>
+          </li>
+        ))
+      }
+    </ul>
+  </div>
+</section>
