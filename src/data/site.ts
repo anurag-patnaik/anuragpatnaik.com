@@ -152,10 +152,10 @@ export const recognitions: Recognition[] = [
     year: "2025",
   },
   {
-    title: "Hackathon Judge",
+    title: "AI Hackathon",
     org: "DeepLearning.AI",
     detail:
-      "Invite-only judging panel of ~80 AI experts, founded by Andrew Ng's DeepLearning.AI.",
+      "Invite-only panel of ~80 AI experts, founded by Andrew Ng's DeepLearning.AI.",
     year: "2025",
   },
   {
