@@ -7,7 +7,7 @@ import { recognitions } from "../data/site";
   class="scroll-mt-20 border-t border-ink-100 dark:border-ink-900"
 >
   <div class="mx-auto max-w-5xl px-6 py-16 sm:py-24">
-    <header class="flex items-baseline justify-between">
+    <header class="reveal flex items-baseline justify-between">
       <h2 class="text-2xl sm:text-3xl font-semibold tracking-tight">
         Recognition
       </h2>
@@ -18,8 +18,11 @@ import { recognitions } from "../data/site";
 
     <ul class="mt-8 divide-y divide-ink-100 dark:divide-ink-900">
       {
-        recognitions.map((r) => (
-          <li class="py-5 flex items-baseline justify-between gap-6">
+        recognitions.map((r, i) => (
+          <li
+            class="reveal py-5 flex items-baseline justify-between gap-6"
+            style={`--reveal-delay: ${i * 60}ms`}
+          >
             <div class="min-w-0">
               <p class="font-medium tracking-tight">
                 {r.title}

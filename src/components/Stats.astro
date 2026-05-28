@@ -6,8 +6,8 @@ import { stats } from "../data/site";
   <div class="mx-auto max-w-3xl px-6 py-8">
     <dl class="grid grid-cols-2 sm:grid-cols-4 gap-6">
       {
-        stats.map((s) => (
-          <div>
+        stats.map((s, i) => (
+          <div class="reveal" style={`--reveal-delay: ${i * 80}ms`}>
             <dt class="font-mono text-xs uppercase tracking-wide text-ink-500 dark:text-ink-400">
               {s.label}
             </dt>

@@ -7,7 +7,7 @@ import { engagements, conferences } from "../data/site";
   class="scroll-mt-20 border-t border-ink-100 dark:border-ink-900"
 >
   <div class="mx-auto max-w-5xl px-6 py-16 sm:py-24">
-    <header>
+    <header class="reveal">
       <h2 class="text-2xl sm:text-3xl font-semibold tracking-tight">
         Speaking & Mentorship
       </h2>
@@ -28,8 +28,11 @@ import { engagements, conferences } from "../data/site";
         class="sm:col-span-3 divide-y divide-ink-100 dark:divide-ink-900 -mt-4 sm:mt-0"
       >
         {
-          engagements.map((e) => (
-            <li class="py-4 first:pt-0 flex items-baseline justify-between gap-4">
+          engagements.map((e, i) => (
+            <li
+              class="reveal py-4 first:pt-0 flex items-baseline justify-between gap-4"
+              style={`--reveal-delay: ${i * 50}ms`}
+            >
               <div>
                 <p class="font-medium tracking-tight">
                   {e.role}
@@ -65,8 +68,11 @@ import { engagements, conferences } from "../data/site";
         class="sm:col-span-3 divide-y divide-ink-100 dark:divide-ink-900 -mt-4 sm:mt-0"
       >
         {
-          conferences.map((c) => (
-            <li class="py-4 first:pt-0 flex items-baseline justify-between gap-4">
+          conferences.map((c, i) => (
+            <li
+              class="reveal py-4 first:pt-0 flex items-baseline justify-between gap-4"
+              style={`--reveal-delay: ${i * 50}ms`}
+            >
               <div>
                 <p class="font-medium tracking-tight">{c.name}</p>
                 <p class="mt-0.5 text-sm text-ink-600 dark:text-ink-400">
