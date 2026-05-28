@@ -249,6 +249,65 @@ export const conferences: Conference[] = [
   },
 ];
 
+export type Paper = {
+  title: string;
+  venue: string;
+  product: string;
+  excerpt: string;
+  url: string;
+  year: string;
+};
+
+export const papers: Paper[] = [
+  {
+    title:
+      "Generative design and digital manufacturing: using AI and robots to build lightweight instrument structures",
+    venue: "NASA NTRS / SPIE 2022",
+    product: "Autodesk Fusion 360",
+    excerpt:
+      "NASA Goddard's Ryan McClelland on using Fusion 360 generative design and robotic manufacturing to evolve spacecraft instrument structures — stiffer, lighter, and built in hours instead of days.",
+    url: "https://ntrs.nasa.gov/citations/20220012523",
+    year: "2022",
+  },
+  {
+    title: "Evolved Structures — Generative Design at NASA Goddard",
+    venue: "NASA Goddard ETD",
+    product: "Autodesk Fusion 360",
+    excerpt:
+      "NASA Goddard's Evolved Structures capability — AI-driven generative design applied to flight hardware including the EXCITE balloon mission, improving structural performance 3× and cutting development time/cost 10×.",
+    url: "https://etd.gsfc.nasa.gov/capabilities/capabilities-listing/generative-design/",
+    year: "2024",
+  },
+  {
+    title: "Designing an Interplanetary Lander with Generative Design",
+    venue: "NASA JPL × Autodesk",
+    product: "Autodesk Generative Design",
+    excerpt:
+      "NASA's Jet Propulsion Lab and Autodesk used generative design to develop a lander concept for icy moons of Jupiter and Saturn — reducing external structure mass by 35%.",
+    url: "https://adsknews.autodesk.com/en/news/nasas-jet-propulsion-lab-teams-autodesk-explore-new-approaches-designing-interplanetary-lander/",
+    year: "2018",
+  },
+  {
+    title: "Moon Camp Challenge — Designing a Lunar Habitat in Fusion 360",
+    venue: "European Space Agency",
+    product: "Autodesk Fusion 360",
+    excerpt:
+      "ESA and the Airbus Foundation's education program where students design lunar settlements in Fusion 360 — hundreds of teams across 17 countries participating in the advanced Pioneers category.",
+    url: "https://www.esa.int/Education/Moon_Camp/Fusion_360",
+    year: "2023",
+  },
+  {
+    title:
+      "Fusion 360 Gallery: A Dataset and Environment for Programmatic CAD Construction from Human Design Sequences",
+    venue: "arXiv / SIGGRAPH 2021",
+    product: "Autodesk Fusion 360",
+    excerpt:
+      "Autodesk AI Lab and MIT CSAIL release 8,625 human CAD design sequences as a dataset for learning programmatic CAD reconstruction — and an interactive Gym environment for training agents.",
+    url: "https://arxiv.org/abs/2010.02392",
+    year: "2021",
+  },
+];
+
 export const trustedBy = [
   "NASA",
   "SpaceX",
