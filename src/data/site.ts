@@ -94,6 +94,23 @@ export type Press = {
 
 export const press: Press[] = [
   {
+    outlet: "AEC Magazine",
+    title: "Autodesk charts its AI future",
+    product: "Autodesk Workshop XR",
+    excerpt:
+      "Workshop XR is integrated into Autodesk Docs, enabling immersive design-review data to be centrally managed and accessible for AI analysis — powering AI-driven insights across the platform.",
+    url: "https://aecmag.com/features/autodesk-charts-its-ai-future/",
+  },
+  {
+    outlet: "LA28 Olympics",
+    title:
+      "Autodesk named Official Design and Make Platform of the LA28 Olympic and Paralympic Games",
+    product: "Autodesk Workshop XR",
+    excerpt:
+      "Autodesk's software — including Workshop XR — will support LA28's $1B+ temporary overlay and construction plan, incorporating sustainable design principles.",
+    url: "https://la28.org/en/newsroom/autodesk-named-official-design-and-make-platform-of-la28.html",
+  },
+  {
     outlet: "Time",
     title: "How Virtual Reality Could Transform Architecture",
     product: "Autodesk Workshop XR",
@@ -108,23 +125,6 @@ export const press: Press[] = [
     excerpt:
       "“Instead of that misaligned pipe being discovered by a contractor during construction, the mistake can be detected and fixed in an immersive 3D model before it's an actual problem.”",
     url: "https://www.fastcompany.com/91011820/the-wild-ways-vr-is-changing-how-buildings-are-designed",
-  },
-  {
-    outlet: "LA28 Olympics",
-    title:
-      "Autodesk named Official Design and Make Platform of the LA28 Olympic and Paralympic Games",
-    product: "Autodesk Workshop XR",
-    excerpt:
-      "Autodesk's software — including Workshop XR — will support LA28's $1B+ temporary overlay and construction plan, incorporating sustainable design principles.",
-    url: "https://la28.org/en/newsroom/autodesk-named-official-design-and-make-platform-of-la28.html",
-  },
-  {
-    outlet: "AEC Magazine",
-    title: "Autodesk charts its AI future",
-    product: "Autodesk Workshop XR",
-    excerpt:
-      "Workshop XR is integrated into Autodesk Docs, enabling immersive design-review data to be centrally managed and accessible for AI analysis — powering AI-driven insights across the platform.",
-    url: "https://aecmag.com/features/autodesk-charts-its-ai-future/",
   },
   {
     outlet: "NASCAR.com",
